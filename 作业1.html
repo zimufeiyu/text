@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆界面</title>
+    <style type="text/css">
+        .all{
+            width:350px;
+            height:300px;
+        }
+        .div{
+            color:rgba(255,255,255,0);
+        }
+        .box01{
+            color:#00a0d8;
+            margin: 30px;
+            font-size: 15px;
+            position: relative;;
+ 
+        }
+        .box02{
+            color: dimgrey;
+            display:inline-block;
+            font-size: 15px;
+            position:absolute;
+            left: 130px;;
+        }
+        .form1{
+            width:1000px;
+            height:30px;
+        }
+        *{
+            line-height:20px;
+        }
+        .div1{
+            margin:30px;
+            
+        }
+        .div2{
+            font-size: 10px;
+            position:absolute;
+            left:30px;
+            
+        }
+
+        .span1{
+            margin: 10px;
+        }
+        .span2{
+            display:inline-block;
+            
+            height:300px;
+            color:#00a0d8;
+            position: relative;
+            left:30px;
+        }
+        .span02{
+            display:inline-block;
+            
+            height:300px;
+            color:#00a0d8;
+            position: absolute;
+            left:240px;
+            
+        }
+        .span3{
+            color:gray;
+        }
+        .qqlog{
+            color:#717171;
+            
+            margin-right: 5px;
+            font-size: 10px;
+        }
+        .weibolog{
+            color:#717171;
+            font-size: 10px;
+        }
+        .img1{
+           display: inline;
+            position: relative;
+            left:30px;
+        }
+        .img2{
+            position: absolute;
+            left: 30px;
+        }
+        .margin{
+            margin-top:30px;
+            margin-bottom:30px;
+            margin-right:30px;
+        }
+        .aspan{
+            position: absolute;
+            right:-150px;
+            border: 1px white;
+        }
+        span>a:link{
+            color:#00a0d8;
+        }
+        span>a:visited{
+            color:#00a0d8;
+        }
+        .location{
+            right:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+    <div class="box01">密码登录 <div class="box02">短信登录</div></div>
+    <form class="form1">
+    
+        <div class="div1"><input type="text" name="请输入账号" placeholder="你的手机号/邮箱" style="width:333px; height:30px"></div>
+
+        <div class="div1"><input type="password" name="密码" placeholder="密码" style="width:333px ;height:30px"></div>
+      <div class="margin">
+            <span class=""><input type="checkbox" id="rememberme" checked="checked"></span>
+            <lable for="rememberme" class="div2">记住我  <span class="span3">不是自己的电脑不要勾选此选项</span></label>
+            <span class="aspan"><a href="https://www.bilibili.com/blackboard/help.html#/?qid=01c16d22f6bb44fd976e8874142b60b6">无法验证？</a>
+            <a href="https://passport.bilibili.com/register/findpassword.html#/verify?gourl=https%3A%2F%2Fwww.bilibili.com%2F"> 忘记密码？</a></span>
+      </div>
+        <div class="margin">
+        <span class="span2"><a href=""><input type="submit" value="登录" style="width:100px;height:30px;background-color:#00a0d8;color:honeydew;border: 1px white;"></a>
+        
+        <span class="span02"><a href="https://passport.bilibili.com/register/phone.html#/phone"><input type="button" value="注册" style="width:100px;height:30px;background-color:white;color:black;border:1px rgb(43, 41, 41) 2em;"></a></span>
+        </span>
+        </div>
+      </div> 
+        <div class="img1"><span class="qqlog"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F25%2F50%2F0856d04e1357109.jpg&refer=http%3A%2F%2Fbpic.588ku.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614587742&t=456029ab633532df92faf2bbc40f3610" width="21px" height="21px">微博账号登录</span>
+              <div class="img1"><span class="weibolog"><img src="https://pic.wenwen.soso.com/p/20100402/20100402184155-836139136.jpg" width="21px" height="21px">QQ账号登录</span></div>
+        </div>
+    </form>
+  
+    
+    </div>
+</body>
+</html> 
