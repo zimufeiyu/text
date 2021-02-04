@@ -4,8 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style type="text/css">
+          .position1{
+              position:fixed;
+              top:0px;
+              right: 0px;
+              width:500px;
+              height:550px;
+              background-color: ghostwhite;
+          }
+          .sidestyle{
+              
+              color:darkgray;
+              position:absolute;
+              left:115px;
+              font-size: 5px;
+              
+              height: 5px;
+          }
+          .reposition{
+              position:relative;
+              left:26px;
+              margin-top: 30px;
+          }
+          .abposition{
+              position:absolute;
+              left:100px;
+          }
+          .margin1{
+              margin:10px
+          }
+          .margin2{
+              margin: 10px;
+          }
+          .margin3{
+              margin-top: 30px;
+          }
+          .color1{
+              background-color: darkgrey;
+          }
+          .color2{
+              background-color: black;
+              height: 50px;
+              color: white;
+          }
+          .color3{
+              background-color: white;
+              
+          }
+          .size1{
+              font-size: 5px;
+              
+          }
+          .type1{
+              width: 1000px;
+          }
+          .box{
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+          }
+          .box1{
+              position: relative;
+          }
+          .box2{
+              position: absolute;
+              top:50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+          }
+    </style>
 </head>
-<body>
+<body class="color1">
+    <div class="position1">
+        <h1>这是侧栏的标题</h1> 
+        <div class="margin1">
+            请输入邮箱地址 <input type="text">
+            <div class="sidestyle" style="margin: 10px;">邮箱地址请按要求格式输入</div>
+        </div>
+        <div class="margin3">
+            <span class="reposition">请输入密码<span class="abposition"><input type="password"></span></span>
+        </div>
+        <div class="margin2">    
+            <span>请重复输入密码 </span><span><input type="password"></span>
+        </div>
+        <div class="sidestyle" style="height: -5px;">密码为6-16位英文数字</div>
+        <div class="reposition" style="margin:15px">
+            性别 <span class="abposition"><input type="radio" name="box" ><label>男</label> <input type="radio" name="box"><label>女</label></span>
+        </div>
+        <div class="reposition">
+             <form>
+                 城市
+                 <select class="abposition">
+                     <option selected="selected">北京</option>
+                     <option>重庆</option>
+                     <option>上海</option>
+                     <option>天津</option>
+                 </select>
+             </form>
+        </div>
+        <div class="reposition">
+            爱好
+            <span class="abposition"><input type="checkbox" name="运动">运动
+            <input type="checkbox" name="艺术">艺术
+            <input type="checkbox" name="科学">科学
+            </span>
+        </div>
+        <div>
+            个人简述 <textarea rows="10" cols="50"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="确认提交" style="width:200px;height:50px;border:1px white;background-color: deepskyblue;border-radius: 5px;">
+        </div>
+    </div>
+    <header class="color2"><label for="link1">导航链接1</label> <label for="link2"> 导航链接2</label> <label for="link3">导航链接3</label> <label for="link4">导航链接4</label></header>
+    <div class="type1">
+        
+        <div class="color3" id="link1">
+            <h1>文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <blockquote class="size1">文章作者 文章发表时间</blockquote>
+            <p>
+                这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+            </p>
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://life.baidu.com">这是一个链接链接到http://life.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里是粗体字</b></p>
+            <img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png">
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+            <a href="http://life.baidu.com" target="_blank">这是一个链接点击后打开新窗口链接到http://life.baidu.com</a>
+        </div>
+        <div class="type1">
+        <div class="color3" id="link2">
+            <h1>另一篇文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <blockquote class="size1">文章作者 文章发表时间</blockquote>
+            <p>
+                这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+            </p>
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://life.baidu.com">这是一个链接链接到http://life.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里是粗体字</b></p>
+            <img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png">
+            <ul>
+                <li>列表项目1</li>
+                <li>列表项目2</li>
+                <li>列表项目3</li>
+            </ul>
+        </div>
+        </div>
+        <div class="type1 color3" id="link3" >
+                <h1>图片</h1>
+                <div class="box"><img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png">
+                <img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png">
+                <img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png">
+                <img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png">
+                <img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png"></div>
+                <div class="box"><img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png">
+                <img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png">
+                <img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png">
+                <img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png">
+                <img src="https://cdn.nlark.com/yuque/0/2021/png/497475/1611383326847-24d7024c-5df1-4587-83c3-5387f4ea551c.png"></div>
+        </div>
+        <div class="type1 color3" id="link4">
+            <h1>最后一篇文章的一级标题</h1>
+            <h2>文章二级标题</h2>
+            <blockquote class="size1">文章作者 文章发表时间</blockquote>
+            <ol>
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+            </ol>
+            <caption>下面是一个表格</caption>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>表头</th>
+                        <th>表头</th>
+                        <th>表头</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>表内容单元格</th>
+                        <th>表内容单元格</th>
+                        <th><a href="www.baidu.com">操作</a></th>
+
+                    </tr>
+                    <tr>
+                        <th>表内容单元格</th>
+                        <th>表内容单元格</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <th>表内容单元格</th>
+                        <th>表内容单元格</th>
+                        <th><a href="www.baidu.com">操作</a></th>
+                    </tr>
+                    <tr>
+                        <th>表内容单元格</th>
+                        <th>表内容单元格</th>
+                        <th><a href="www.baidu.com">操作</a></th>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td>总计</td>
+                            <td>1000</td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <footer class="color2 box1"><div class="box2">版权所有</div></footer>
     
 </body>
 </html>
